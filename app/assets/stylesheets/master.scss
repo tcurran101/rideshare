@@ -1,6 +1,32 @@
 @import "bootstrap"; 
 
 body {
-    background: image_url('united-squares-negative.png');
+    background: image_url('circle-blues.png');
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   
+  .navbar {
+    font-family: "Helvetica Neue", Helvetica;
+    font-weight: 200;
+    box-shadow: 0px 1px 3px #2a2a2a;
+    background: #97C3AB;
+ }
+
+.navbar-inverse .navbar-brand {
+  color: #F9F267;
+  font-family: 'josefin_sansbold', sans-serif;
+  font-size: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+  font-size: 20px;
+  
+}
+
+.title {
+  font-size: 70px;
+  color: whitesmoke;
+  font-family: "Helvetica Neue", Helvetica;
+  margin: 13px;
+}
