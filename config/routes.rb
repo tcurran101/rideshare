@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  root 'static_pages#index'
+  root 'drivers#index'
 
-  resources :drivers, only: [:new, :create, :show]
-
+  resources :drivers
 end
