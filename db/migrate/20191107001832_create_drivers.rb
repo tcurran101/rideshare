@@ -1,5 +1,5 @@
 class CreateDrivers < ActiveRecord::Migration[5.2]
-  def create
+  def change
     create_table :drivers do |t|
       t.string :name
       t.string :license_no

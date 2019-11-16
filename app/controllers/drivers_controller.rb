@@ -3,7 +3,7 @@ class DriversController < ApplicationController
         @drivers= Driver.all
     end
 
-    def change
+    def new
         @driver = Driver.new
     end
 end
