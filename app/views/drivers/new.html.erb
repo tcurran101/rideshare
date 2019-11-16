@@ -3,7 +3,7 @@
 <div class="booyah-box col-10 offset-1">
   <h1>Sign Up to Drive</h1>
   <br />
-   <%= simple_form_for @driver, url: drivers_path(@driver) do |f| %>
+   <%= simple_form_for @driver do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :license_no %>
