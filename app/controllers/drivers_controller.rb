@@ -3,7 +3,7 @@ class DriversController < ApplicationController
         @drivers= Driver.all
     end
 
-    def new
+    def create
         @driver = Driver.new
     end
 end

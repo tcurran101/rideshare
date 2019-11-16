@@ -24,14 +24,14 @@ default: &default
 
 development:
   <<: *default
-  database: new-rideshare_development
+  database: rideshare_development
 
 test:
   <<: *default
-  database: new-rideshare_test
+  database: rideshare_test
 
 production:
   <<: *default
-  database: new-rideshare_production
+  database: rideshare_production
   # username: rideshare
   # password: <%= ENV['RIDESHARE_DATABASE_PASSWORD'] %>
