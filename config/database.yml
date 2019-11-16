@@ -20,6 +20,9 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: localhost
 
 development:
   <<: *default
@@ -79,22 +82,5 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
-  password: password
-  host: localhost
-development:
-  <<: *default
-  database: rideshare_development
-test:
-  <<: *default
-  database: rideshare_test
-production:
-  <<: *default
-  database: rideshare_production
-  # username: rideshare
-  # password: <%= ENV['NOMSTER_DATABASE_PASSWORD'] %>
-
+  <<: *default
+  database: rideshare_production
