@@ -1,6 +1,6 @@
 class DriversController < ApplicationController
     def index
-        
+        @drivers = Driver.all
     end
 
     def new
@@ -8,7 +8,7 @@ class DriversController < ApplicationController
     end
 
     def create
-        @driver = drivers.create(driver_params)
+        @driver = Driver.create(driver_params)
         if @driver.valid?
           redirect_to root_path
         else
